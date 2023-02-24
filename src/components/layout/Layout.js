@@ -6,7 +6,7 @@ import cl from './layout.module.scss';
 
 function Layout({title, children}) {
     return (
-        <div>
+        <div className={cl.layout}>
             <Head>
                 <title>{title + " - WSP"}</title>
             </Head>
@@ -20,9 +20,8 @@ Layout.Grid = ({children}) => (
     <div className={cl["layout-grid"]}>{children}</div>
 )
 
-Layout.Grid.Column = ({children, fr = 1}) => {
-    return <div className={cl["layout-grid__column"]} style={{flexGrow: fr}}>{children}</div>
+Layout.Grid.Column = ({children, fr = 1, maxWidth = null}) => {
+    return <div className={cl["layout-grid__column"]} style={{flexGrow: fr, maxWidth}}>{children}</div>
 }
-
 
 export default Layout;

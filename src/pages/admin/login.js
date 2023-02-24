@@ -7,15 +7,15 @@ export default function LoginPage() {
     return (
         <Layout title={"Авторизация"}>
             <Layout.Grid>
-                <Layout.Grid.Column fr={2} />
-                <Layout.Grid.Column fr={2}>
+                <Layout.Grid.Column />
+                <Layout.Grid.Column maxWidth={320}>
                     <Form>
                         <Input />
                         <Input />
                         <Submit>Войти</Submit>
                     </Form>
                 </Layout.Grid.Column>
-                <Layout.Grid.Column fr={2}/>
+                <Layout.Grid.Column />
             </Layout.Grid>
         </Layout>
     )
