@@ -1,0 +1,10 @@
+.header {
+  padding: 24px 0 0 0;
+  &__logo {
+    width: 100%;
+    border-bottom: 3px solid #000;
+    padding-bottom: 8px;
+    font-family: 'Tilt Warp', cursive;
+    margin: 0 !important;
+  }
+}

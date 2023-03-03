@@ -1,0 +1,13 @@
+.navigation {
+  &__link {
+    margin: 24px 0 24px 0;
+    & > a {
+      &, &:visited {
+        color: dodgerblue;
+      }
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}

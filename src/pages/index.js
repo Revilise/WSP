@@ -4,16 +4,17 @@ import Navigation from "../components/navigation/Navigation";
 export default function HomePage() {
     const links = [
         {
-            link: "/"
+            link: "/articles/modeling_1",
+            title: "Моделирование ч.1"
         }
     ]
 
     return (
         <Layout title={"Главная страница"}>
             <Layout.Grid>
-                <Layout.Grid.Column>
-                    <Navigation />
-                </Layout.Grid.Column>
+            {/*    <Layout.Grid.Column>*/}
+                    <Navigation links={links} />
+                {/*</Layout.Grid.Column>*/}
             </Layout.Grid>
         </Layout>
     )
