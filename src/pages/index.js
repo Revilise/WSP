@@ -12,9 +12,9 @@ export default function HomePage() {
     return (
         <Layout title={"Главная страница"}>
             <Layout.Grid>
-                <Layout.Grid.Column>
+            {/*    <Layout.Grid.Column>*/}
                     <Navigation links={links} />
-                </Layout.Grid.Column>
+                {/*</Layout.Grid.Column>*/}
             </Layout.Grid>
         </Layout>
     )
