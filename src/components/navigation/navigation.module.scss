@@ -1,0 +1,10 @@
+.navigation {
+  &__link > a {
+    &, &:visited {
+      color: dodgerblue;
+    }
+    &:hover {
+      color: blue;
+    }
+  }
+}

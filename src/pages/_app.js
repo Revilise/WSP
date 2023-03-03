@@ -2,6 +2,7 @@ import React from 'react';
 
 import Loading from "../components/loading/Loading";
 
+import '../css/article.css';
 import '../css/clear-styles.css';
 import '../css/fonts.css';
 
