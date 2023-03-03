@@ -6,7 +6,7 @@ import {useRouter} from "next/router";
 
 export async function getServerSideProps({params}) {
     try {
-        const res = await axios.get(`http://${process.env.HOSTNAME}/articles/${params?.slug}.html`);
+        const res = await axios.get(`${process.env.VERCEL_URL}/articles/${params?.slug}.html`);
         return { props: { page: res.data, title: params?.slug } }
     }
     catch (ex) {
